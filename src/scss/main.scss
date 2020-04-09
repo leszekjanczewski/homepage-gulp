@@ -10,7 +10,295 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  color: $yellow;
-  background: $violet;
+.about__header {
+  color: rgb(69, 29, 121);
 }
+
+.about__paragraf{
+  padding: 10px 20px;
+  font-size: 20px;
+  clear: both;
+  
+}
+
+.about__paragraf--color{
+  color: #E54B4B;
+  
+}
+
+.about__paragraf--color h1{
+  display: inline;
+}
+
+.about__picture{
+  width: 100px;
+  max-width: 300px;
+  display: block;
+  float: left;
+  margin: 0 16px 16px 0;
+}
+
+.about__link{
+  color: blueviolet;
+}
+
+.article{
+  padding-top: 51px;
+  margin: 0 0;
+  
+
+}
+
+.article__footer{
+  margin-top: 50px;
+  color: slategrey;
+  clear: both;
+}
+
+.article__header{
+  font-size: 20px;
+  margin: 80px 0 30px 0;
+}
+
+.article__picture{
+  width: 100px;
+  max-width: 300px;
+  display: block;
+  float: right;
+  margin: 16px 0 16px 16px;
+}
+
+.article__paragraf{
+  color: black;
+  padding: 20px 0;
+  margin: 0 0;
+  text-align: justify;
+  line-height: 24px;
+}
+
+body {
+  background-color: #08AEEA;
+  background-image: linear-gradient(135deg, rgb(137, 217, 247) 67%, rgb(115, 216, 170) 84%, #ece4e4 100%);
+
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.diary{
+  clear: left;
+
+  &__header{
+    color: rgb(69, 29, 121);
+  }
+}
+
+
+.day{
+  padding: 16px;
+
+  &:last-child{
+    background-color: yellow;
+  }
+  &:first-child{
+    background-color: #fff;
+  }
+  &__header{
+    color: rgb(81, 36, 139);
+    margin: 0 0 16px 0;
+    font-size: 20px;
+    &::before{
+      content: "";    
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      margin-right: 5px;;
+      background-color: yellowgreen;
+    }
+    &::after{
+      content: "";    
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      margin-left: 5px;;
+      background-color: red;
+    }
+    &--sunday{
+      color: darkred;
+    }
+  }
+  &__paragraf {
+    padding: 0 0;
+    margin: 0 0;
+    line-height: 24px;
+  }
+  &__link{
+    color: blueviolet;
+  }
+}
+
+.focus:focus{
+  border: solid red 3px;
+}
+
+.footer {
+  width: 100%;
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+html{
+  font-family: 'helvetica neue', Arial, Helvetica, sans-serif;
+}
+
+.header {
+  padding-top: 51px;
+
+  &__title {
+    color: #4D62C1;
+    margin:50px 0 50px 0;
+    text-shadow: 3px 3px 1px tomato;
+    &--red{
+      color: red;
+    }
+  }
+}
+
+.main {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 0 auto; 
+}
+
+.navigation{
+  &__header{
+    background-color:  rgb(178, 243, 214);
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &:hover{
+      background-color: rosybrown;
+    }
+  }
+  &__link{
+    text-decoration: none;
+    &:hover{
+      color: #000;
+    }
+  }
+  
+  &__item{
+    margin-left: 16px;
+  }
+  
+  &__list{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+.top{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: rgb(148, 114, 202);
+  text-decoration: none;
+}
+
+.table{
+  border: solid 1px #4D62C1;
+  border-collapse:collapse;
+  table-layout: fixed;
+  width: 100%;
+
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.table td{
+  padding: 10px;
+}
+
+.table tr{
+  padding-top: 10px;
+}
+
+.table th{
+  padding: 10px;
+}
+
+.table caption{
+  padding: 10px;
+  font-weight: bolder;
+  border: solid 1px #4D62C1;
+}
+
+
+
+
+@media (max-width: 710px){
+  .grid{
+      grid-template-columns: 1fr;
+      color: darkblue;
+  }
+
+
+  .day__link{
+      color: rgb(241, 4, 64);
+  }
+
+  .navigation__list{
+      flex-direction: column;
+      display: none;
+      
+  }
+
+  .navigation__header{
+      opacity: 0.9;
+  }
+
+  .navigation__list--visible{
+      display: flex;
+      align-items: center;
+      
+  }
+
+  .navigation__item{
+      margin: 16px;
+  }
+
+  .navigation__switcher{
+      border: none;
+      background: none;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+  }
+}
+
+@media (min-width:711px){
+
+  .navigation__switcher{
+      display: none;
+      max-width: 900px;
+  }
+}
+
+

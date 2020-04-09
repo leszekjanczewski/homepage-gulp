@@ -1,40 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
+<html lang="pl">
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+ 
+  <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+</head>
 
-    <script src="js/main.js"></script>
-  </body>
+<body>
+
+  <header class="navigation">
+    <nav class="navigation__header">
+      <ul class="navigation__list navigation__list--js">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Strona główna</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="podstrona.html">Podstrona</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="podstrona1.html">Podstrona1</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="podstrona2.html">Podstrona2</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="podstrona3.html">Podstrona3</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">&#9776</button>
+  </header>
+
+  <!-- main -->
+  <main class="main" id="top">
+    <header class="header">
+
+      <h1 class="header__title header__title--js">
+        Łukasz Szczurowski - Strona domowa - pozdro github ! TEST
+      </h1>
+
+      <button class="header__button header__buton--js">zmień treść nagłówka	</button>
+      <input type="text" class="focus">
+
+    </header>
+
+    <!-- about -->
+    <section class="about">
+      <h2 class="about__header">Kim jestem?</h2>
+      <p class="about__paragraf">
+        <img src="../assets/img/mojeSelfiewizytówka.png" alt="heroPictures" title="author" class="about__picture" />
+         ipsum dolor sit <b>consectetur</b> adipisicing elit. Quis cumque provident aliquid illo veritatis quod esse
+        beatae ad omnis <strong>voluptatem</strong> tempore, magnam odio doloremque reprehenderit molestiae similique hic
+        sint fugiat.
+      <br>
+      <a class="about__link" href="#pamietniczek">Przejdź do pamiętniczka</a>
+      </p>
+      <p class="about__paragraf about__paragraf--color about__paragraf--js">Testuje modyfikator.</p>
+    </section>
+
+    <!-- pamiętniczek -->
+    <section class="diary" id="pamietniczek">
+
+      <h2 class="diary__header">Pamiętniczek</h2>
+
+      <div class="grid">
+        <section class="day">
+          <h3 class="day__header">Jak stworzyć prawidłowego <i>HTML-a?</i></h3>
+            <p class="day__paragraf">Lorem ipsum dolor sit amet  
+                asperiores excepturi eos similique laudantium, totam magni tenetur quis distinctio esse, repudiandae fugit.
+                Quam, beatae!
+            <br>
+            <a class="day__link" href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
+            </p>
+        </section>
+
+        <section class="day">
+          <h3 class="day__header day__header--sunday">Czy nagrywanie szkolenia to prosta sprawa</h3>
+          <p class="day__paragraf">Lorem ipsum dolor sit amet, <em>adipisicing elit</em> . Eos nesciunt aliquam modi, error officiis
+            laboriosam, quod ad amet dolorem architecto consectetur. Eaque architecto quo fuga esse maiores ipsum, labore
+            harum.
+            <br>
+            <a class="day__link" href="podstrona1.html">Przejdź do artykuły o nagrywaniu</a>
+          </p>
+        </section>
+
+        <section class="day">
+            <h3 class="day__header">Dziś tj. 11 lutego 2020 roku podejmuję wyzwanie :D</h3>
+            <P class="day__paragraf"> Po prostu lecę lecę lecę FRuuuuuuuuuuuuuu uuuuuuuuuuuuuu..............
+
+              <br>
+              <a class="day__link" href="podstrona2.html">Przejdź do artykułu o lataniu</a>
+            </P>
+        </section>
+
+        <section class="day">
+          <h3 class="day__header">24 lutego 2020 praca domowa tydzień 3</h3>
+            <P class="day__paragraf"> Po prostu kliknij poniżej aby przejść do artykułu
+              <br>
+              <a class="day__link" href="podstrona3.html">Przejdź do artykułu</a>
+            </P> 
+        </section>
+      </div>
+    </section>
+      
+    <section class="glossary">
+      <dl>
+        <dt>CSS</dt>
+          <dd>Style (to co widzisz jak jest ładne albo brzydkie)</dd>
+        <dt>HTML</dt>
+          <dd>treść + szkielet strony</dd>
+        <dt>JavaScript</dt>
+        <dt>EcmaScript</dt>
+      </dl>
+    </section>
+
+    <section class="data">
+      
+      <table class="table">
+        <caption>Oceny z przedmiotu WTF</caption>
+        <thead>
+          <tr>
+            <th>Imie Nazwisko</th>
+            <th>Ocena</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Maciek Korsan</td>
+            <td>3</td>
+            <td>21.09.2021</td>
+          </tr>
+          <tr>
+            <td>Lukasz Szczurowski</td>
+            <td>3+</td>
+            <td>11.09.1921</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+
+    <a href="#top" class="top">Na górę</a>
+    &#169; Strona domowa Łukasza Szczurowskiego, przebieg kursu Maćka Korsana WTF
+  </footer>
+  <script src="js/main.js"></script>
+
+</body>
+
 </html>
