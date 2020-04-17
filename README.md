@@ -3,7 +3,7 @@
 
 # Mój homepage
 
-Zapraszam na moją stronę: [Strona domowa Łukasz Szczurowski]( https://lukaszszczurowski.github.io/homepage-gulp)
+Zapraszam na moją stronę: [Strona domowa Łukasz Szczurowski]( https://lukaszszczurowski.github.io/homepage-gulp/src/content/)
 
 ## Jak uruchomić moją stronę lokalnie
 
